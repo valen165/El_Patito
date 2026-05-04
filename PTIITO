@@ -1,0 +1,28 @@
+Algoritmo CalcularPromediosContinuos
+    Definir nota, suma, promedio Como Real
+    Definir contador, cantidadNotas Como Entero
+    Definir continuar Como Caracter
+    
+    continuar <- "s"
+    
+    Mientras continuar = "s" O continuar = "S" Hacer
+        Escribir "--- Nuevo Cálculo de Promedio ---"
+        Escribir "Ingrese la cantidad de notas a promediar:"
+        Leer cantidadNotas
+        
+        suma <- 0
+        Para contador <- 1 Hasta cantidadNotas Hacer
+            Escribir "Ingrese la nota ", contador, ":"
+            Leer nota
+            suma <- suma + nota
+        Fin Para
+        
+        promedio <- suma / cantidadNotas
+        Escribir "El promedio calculado es: ", promedio
+        
+        Escribir "¿Desea calcular otro promedio? (s/n):"
+        Leer continuar
+    Fin Mientras
+    
+    Escribir "Gracias por usar el sistema. ¡Adiós!"
+FinAlgoritmo
